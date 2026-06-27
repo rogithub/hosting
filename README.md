@@ -1,0 +1,2 @@
+# hosting
+hosting.xplaya.com
