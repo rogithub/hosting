@@ -1,0 +1,10 @@
+hosting/
+src/
+.git
+.github
+.claude
+CLAUDE.md
+README.md
+Containerfile
+.dockerignore
+.gitignore

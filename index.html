@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hosting, desarrollo web y sistemas para negocios · xplaya.com</title>
+
+  <meta name="description" content="Asesoría, desarrollo de sistemas y hosting para negocios pequeños en México. Puntos de venta, e-commerce, pagos con tarjeta e inteligencia artificial para digitalizar tu negocio.">
+  <meta name="keywords" content="hosting, desarrollo web, sistemas para negocios, punto de venta, pagos con tarjeta, e-commerce, inteligencia artificial, digitalización, bases de datos, Playa del Carmen, México">
+  <meta name="author" content="xplaya.com">
+  <meta name="theme-color" content="#E85D04">
+
+  <link rel="canonical" href="https://hosting.xplaya.com">
+  <link rel="icon" href="/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://hosting.xplaya.com">
+  <meta property="og:site_name"   content="xplaya.com">
+  <meta property="og:locale"      content="es_MX">
+  <meta property="og:title"       content="Hosting, desarrollo web y sistemas para negocios · xplaya.com">
+  <meta property="og:description" content="Digitaliza tu negocio: punto de venta, e-commerce, pagos con tarjeta y herramientas de IA. Infraestructura propia con clúster Kubernetes ARM64.">
+  <meta property="og:image"       content="https://hosting.xplaya.com/img/og-hosting.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"   content="xplaya.com — Hosting y desarrollo para negocios">
+  <meta name="twitter:card"       content="summary_large_image">
+  <meta name="twitter:image"      content="https://hosting.xplaya.com/img/og-hosting.jpg">
+
+  <!-- Preconnect CDN -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Font Awesome (diferido — igual que xplaya) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css"
+        media="print" onload="this.media='all'">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css"
+        media="print" onload="this.media='all'">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css"
+        media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/solid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/brands.min.css">
+  </noscript>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "xplaya.com — Hosting y desarrollo para negocios",
+    "url": "https://hosting.xplaya.com",
+    "logo": "https://hosting.xplaya.com/favicon/web-app-manifest-192x192.png",
+    "image": "https://hosting.xplaya.com/img/og-hosting.jpg",
+    "telephone": "+52-452-201-8336",
+    "email": "contacto@xplaya.com",
+    "areaServed": { "@type": "Country", "name": "México" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Playa del Carmen",
+      "addressRegion": "Quintana Roo",
+      "addressCountry": "MX"
+    },
+    "description": "Asesoría, desarrollo de sistemas y hosting para negocios pequeños. Punto de venta, e-commerce, pagos con tarjeta, bases de datos e inteligencia artificial.",
+    "serviceType": ["Hosting web", "Desarrollo de software", "Punto de venta", "E-commerce", "Inteligencia artificial", "Bases de datos"]
+  }
+  </script>
+
+  <!-- Umami analytics — reemplaza WEBSITE_ID con el de hosting.xplaya.com en Umami -->
+  <script defer src="https://analytics.xplaya.com/script.js"
+          data-website-id="REEMPLAZAR-CON-ID-DE-HOSTING"></script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     NAVEGACIÓN
+══════════════════════════════════════════════ -->
+<input type="checkbox" id="nav-toggle" class="sr-only">
+<nav id="navbar">
+  <div class="nav-container">
+    <a class="nav-brand" href="/">
+      <img src="/favicon/web-app-manifest-192x192.png" alt="xplaya.com" width="32" height="32">
+      xplaya.com
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#diferenciador">Nosotros</a>
+      <a href="#contacto"
+         class="btn btn-wa"
+         target="_blank" rel="noopener"
+         href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+    <label for="nav-toggle" class="nav-hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </label>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <i class="fas fa-microchip"></i>&nbsp; IA · Hosting · Sistemas
+    </div>
+    <h1>
+      Acercamos la <span class="accent">Inteligencia Artificial</span><br>
+      a tu negocio
+    </h1>
+    <p class="hero-sub">
+      Digitaliza tu operación: vende en línea, acepta pagos con tarjeta y múltiples formas
+      de pago, lleva tu inventario y conoce tus métricas. Sistemas reales, hechos a medida
+      para negocios pequeños.
+    </p>
+    <div class="hero-actions">
+      <a href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios%20de%20desarrollo%20y%20hosting"
+         class="btn btn-primary" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Platicamos por WhatsApp
+      </a>
+      <a href="#portafolio" class="btn btn-ghost">
+        Ver lo que he construido →
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <strong>Infraestructura propia</strong>
+        <span>Clúster Kubernetes ARM64</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <strong>Sistemas en producción</strong>
+        <span>Funcionando en Playa del Carmen</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <strong>Stack completo</strong>
+        <span>De la base de datos al pago</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     SERVICIOS
+══════════════════════════════════════════════ -->
+<section id="servicios" class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Servicios</h2>
+      <p>Todo lo que tu negocio necesita para operar y crecer en línea</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-robot"></i></div>
+        <h3>IA para tu negocio</h3>
+        <p>Herramientas de inteligencia artificial integradas en tu flujo de trabajo: generación de documentos, análisis de datos y automatización de procesos repetitivos.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-server"></i></div>
+        <h3>Hosting</h3>
+        <p>Hospedo tu sitio o sistema en mi clúster propio con alta disponibilidad, HTTPS automático, backups diarios y monitoreo en tiempo real.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <h3>Desarrollo web y sistemas</h3>
+        <p>Páginas web, tiendas en línea, sistemas de inventario, APIs y aplicaciones a medida. Desde una landing hasta un sistema completo de gestión.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-cash-register"></i></div>
+        <h3>Punto de venta digital</h3>
+        <p>Digitaliza tu caja: vende desde una tablet o celular, controla tu inventario en tiempo real, cobra con tarjeta y emite tickets electrónicos.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+        <h3>Pagos con tarjeta</h3>
+        <p>Integración con Stripe: acepta tarjetas de crédito y débito, efectivo, transferencia y múltiples formas de pago en una sola transacción.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-database"></i></div>
+        <h3>Bases de datos</h3>
+        <p>Diseño, implementación y mantenimiento de bases de datos PostgreSQL. Backups automáticos en la nube y reportes a medida para tu negocio.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-headset"></i></div>
+        <h3>Asesoría y soporte</h3>
+        <p>Te acompaño en la digitalización de tu negocio: qué necesitas, qué no, cómo hacerlo paso a paso y con presupuesto real.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PORTAFOLIO
+══════════════════════════════════════════════ -->
+<section id="portafolio" class="section section-dark">
+  <div class="container">
+    <div class="section-header section-header--light">
+      <h2>Lo que ya está funcionando</h2>
+      <p>No promesas — sistemas reales en producción hoy</p>
+    </div>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/pos1.webp"
+             alt="Sistema punto de venta — búsqueda de productos"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">POS</span>
+          <h4>Punto de Venta</h4>
+          <p>Búsqueda instantánea en miles de productos, múltiples cajeros, recibo electrónico y control de inventario en tiempo real.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/multiplestiposdepago.webp"
+             alt="Pagos combinados: efectivo, tarjeta, transferencia y dólares"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Pagos</span>
+          <h4>Múltiples Formas de Pago</h4>
+          <p>Cobra con efectivo, tarjeta, transferencia y dólares en una misma venta. El sistema calcula el cambio y cierra la caja automáticamente.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/pagostarjeta.webp"
+             alt="Integración con Stripe — checkout seguro con tarjeta"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Stripe</span>
+          <h4>Pagos en Línea con Tarjeta</h4>
+          <p>Integración con Stripe para cobros seguros desde cualquier página web. Acepta Visa, Mastercard, Amex y más sin hardware adicional.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/catalogo1.webp"
+             alt="Tienda en línea con catálogo y carrito de compras"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">E-commerce</span>
+          <h4>Tienda en Línea</h4>
+          <p>Catálogo con búsqueda en tiempo real, carrito de compras y envíos a toda la república. Tus clientes compran desde el celular.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/ticketdigital.webp"
+             alt="Ticket digital electrónico con monedero de cashback"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Fidelidad</span>
+          <h4>Ticket Digital y Monedero</h4>
+          <p>Recibo electrónico con link permanente, desglose de compra y monedero de cashback. Tus clientes acumulan y regresan.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item is-portrait">
+        <img src="/img/portfolio/kiosko1.webp"
+             alt="Kiosko app en tablet — personalización de fotos"
+             loading="lazy" width="380" height="1035">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Kiosko</span>
+          <h4>App Táctil en Tablet</h4>
+          <p>Kiosko de autoservicio: el cliente personaliza su pedido desde la pantalla sin depender del personal. Disponible en tablet y celular.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/analytics1.webp"
+             alt="Dashboard de analytics — visitas y métricas en tiempo real"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Analytics</span>
+          <h4>Métricas en Tiempo Real</h4>
+          <p>Dashboard con visitantes, sesiones, páginas más vistas y tasa de conversión. Saber qué funciona y qué no, sin adivinar.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/imagina1.webp"
+             alt="Imagina — herramientas con IA para impresión de fotos"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">IA</span>
+          <h4>Herramientas con IA</h4>
+          <p>Generación y edición asistida integrada directamente en el flujo del negocio. De la idea al producto terminado en minutos.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-item">
+        <img src="/img/portfolio/elcocinator1.webp"
+             alt="El Cocinator — landing profesional con diseño premium"
+             loading="lazy" width="900" height="837">
+        <div class="portfolio-caption">
+          <span class="portfolio-tag">Página web</span>
+          <h4>Página Web Profesional</h4>
+          <p>Sitio con diseño premium, SEO optimizado, carga instantánea y pago en línea integrado. Ejemplo real: <strong>elcocinator.com</strong></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     DIFERENCIADOR
+══════════════════════════════════════════════ -->
+<section id="diferenciador" class="section section-white">
+  <div class="container">
+    <div class="diff-layout">
+
+      <div class="diff-content">
+        <h2>¿Por qué conmigo?</h2>
+        <p>
+          No es teoría — opero mi <strong>propio clúster Kubernetes (k3s)</strong> ARM64 en producción.
+          Los sistemas que construyo viven en esa infraestructura hoy mismo, con monitoreo 24/7,
+          backups automáticos y alta disponibilidad.
+        </p>
+        <p>
+          Entiendo el negocio pequeño porque trabajo con uno a diario. Sé qué funciona,
+          qué es desperdicio y cuánto cuesta cada decisión técnica.
+        </p>
+
+        <h3 style="font-size:.9rem; font-weight:700; color:var(--slate-500); text-transform:uppercase; letter-spacing:.08em; margin-bottom:.75rem;">Stack tecnológico</h3>
+        <div class="stack-grid">
+          <div class="stack-pill">Rust</div>
+          <div class="stack-pill">.NET / C#</div>
+          <div class="stack-pill">PostgreSQL</div>
+          <div class="stack-pill">Kubernetes</div>
+          <div class="stack-pill">Stripe</div>
+          <div class="stack-pill">Nginx</div>
+          <div class="stack-pill">ArgoCD</div>
+          <div class="stack-pill">TypeScript</div>
+          <div class="stack-pill">Docker</div>
+        </div>
+      </div>
+
+      <div class="cluster-card">
+        <h3><i class="fas fa-server"></i> Infraestructura propia</h3>
+        <div class="node-list">
+          <div class="node-item">
+            <div>
+              <div class="node-name">kukulkan</div>
+              <div class="node-spec">ARM64 · 16 GiB RAM · NVMe 2 TB</div>
+            </div>
+            <span class="node-role cp">control-plane</span>
+          </div>
+          <div class="node-item">
+            <div>
+              <div class="node-name">ixchel</div>
+              <div class="node-spec">ARM64 · 8 GiB RAM · SSD 2 TB</div>
+            </div>
+            <span class="node-role wk">worker</span>
+          </div>
+          <div class="node-item">
+            <div>
+              <div class="node-name">chaac</div>
+              <div class="node-spec">ARM64 · 8 GiB RAM · SSD 2 TB</div>
+            </div>
+            <span class="node-role wk">worker</span>
+          </div>
+        </div>
+        <p style="margin-top:1.25rem; font-size:.78rem; color:var(--slate-400); line-height:1.55;">
+          <i class="fas fa-shield-halved" style="color:var(--orange); margin-right:.4rem;"></i>
+          Backups diarios · SSL automático · GitOps con ArgoCD · Monitoreo Prometheus + Grafana
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     PROCESO
+══════════════════════════════════════════════ -->
+<section id="proceso" class="section section-light">
+  <div class="container">
+    <div class="section-header">
+      <h2>Cómo trabajamos</h2>
+      <p>Claro, directo y sin sorpresas</p>
+    </div>
+    <div class="process-grid">
+
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>Platicamos</h4>
+        <p>Me cuentas cómo funciona tu negocio y qué quieres mejorar. Sin compromiso, sin tecnicismos. Solo entender qué necesitas.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>Propuesta</h4>
+        <p>Te presento opciones con costos y tiempos reales. Defines el alcance, priorizamos lo que da más valor primero.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>Desarrollamos</h4>
+        <p>Construyo el sistema, te muestro avances en cada etapa y hago los ajustes que necesites antes de lanzar.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>Lanzamos y te acompaño</h4>
+        <p>Desplegamos el sistema y quedo disponible para soporte. Tus datos son tuyos — siempre.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     CTA FINAL
+══════════════════════════════════════════════ -->
+<section id="contacto" class="section">
+  <div class="container">
+    <h2>¿Tu negocio listo para crecer?</h2>
+    <p>Escríbeme por WhatsApp o por correo — te respondo el mismo día.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios%20de%20desarrollo%20y%20hosting"
+         class="btn btn-wa" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+      </a>
+      <a href="mailto:contacto@xplaya.com?subject=Información%20sobre%20servicios%20de%20desarrollo"
+         class="btn btn-email">
+        <i class="fas fa-envelope"></i> contacto@xplaya.com
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">xplaya.com</span>
+    <div class="footer-links">
+      <a href="https://wa.me/524522018336" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> 452-201-8336
+      </a>
+      <a href="mailto:contacto@xplaya.com">
+        <i class="fas fa-envelope"></i> contacto@xplaya.com
+      </a>
+      <a href="https://xplaya.com" target="_blank" rel="noopener">
+        <i class="fas fa-store"></i> xplaya.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios"
+   class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
