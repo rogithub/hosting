@@ -580,7 +580,7 @@
 
   function closeLightbox() {
     lb.classList.remove('is-open');
-    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
     document.body.style.paddingRight = '';
     lbImg.removeAttribute('src');
   }
@@ -595,7 +595,7 @@
       lbImg.alt = card.dataset.alt || '';
       var sbw = window.innerWidth - document.documentElement.clientWidth;
       document.body.style.paddingRight = sbw + 'px';
-      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
       lb.classList.add('is-open');
     });
   });
