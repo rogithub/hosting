@@ -582,15 +582,18 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
   document.querySelectorAll('.portfolio-item[data-img]').forEach(function (card) {
     card.addEventListener('click', function () {
+      var sbw = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.paddingRight = sbw + 'px';
+      document.body.style.overflow = 'hidden';
       lbImg.src = card.dataset.img;
       lbImg.alt = card.dataset.alt || '';
       lb.classList.add('is-open');
-      document.body.style.overflow = 'hidden';
     });
   });
   function close() {
     lb.classList.remove('is-open');
     document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
     lbImg.src = '';
   }
 })();
