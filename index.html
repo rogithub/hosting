@@ -22,7 +22,7 @@
   <meta property="og:site_name"   content="xplaya.com">
   <meta property="og:locale"      content="es_MX">
   <meta property="og:title"       content="Hosting, desarrollo web y sistemas para negocios · xplaya.com">
-  <meta property="og:description" content="Digitaliza tu negocio: punto de venta, e-commerce, pagos con tarjeta y herramientas de IA. Infraestructura propia con clúster Kubernetes ARM64.">
+  <meta property="og:description" content="Digitaliza tu negocio: punto de venta, e-commerce, pagos con tarjeta y herramientas de IA. Infraestructura en la nube con alta disponibilidad.">
   <meta property="og:image"       content="https://hosting.xplaya.com/img/og-hosting.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -74,9 +74,8 @@
   }
   </script>
 
-  <!-- Umami analytics — reemplaza WEBSITE_ID con el de hosting.xplaya.com en Umami -->
   <script defer src="https://analytics.xplaya.com/script.js"
-          data-website-id="REEMPLAZAR-CON-ID-DE-HOSTING"></script>
+          data-website-id="ad1c49ac-b474-4188-8c24-81af6fc6fd8e"></script>
 </head>
 <body>
 
@@ -88,7 +87,7 @@
   <div class="nav-container">
     <a class="nav-brand" href="/">
       <img src="/favicon/web-app-manifest-192x192.png" alt="xplaya.com" width="32" height="32">
-      xplaya.com
+      <span>xplaya.com</span>
     </a>
     <div class="nav-links">
       <a href="#servicios">Servicios</a>
@@ -136,8 +135,8 @@
     </div>
     <div class="hero-trust">
       <div class="trust-item">
-        <strong>Infraestructura propia</strong>
-        <span>Clúster Kubernetes ARM64</span>
+        <strong>Nube privada</strong>
+        <span>Alta disponibilidad · 3 nodos</span>
       </div>
       <div class="trust-divider"></div>
       <div class="trust-item">
@@ -223,7 +222,10 @@
     </div>
     <div class="portfolio-grid">
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/pos1.webp"
+           data-alt="Sistema punto de venta — búsqueda de productos">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/pos1.webp"
              alt="Sistema punto de venta — búsqueda de productos"
              loading="lazy" width="900" height="837">
@@ -234,7 +236,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/multiplestiposdepago.webp"
+           data-alt="Pagos combinados: efectivo, tarjeta, transferencia y dólares">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/multiplestiposdepago.webp"
              alt="Pagos combinados: efectivo, tarjeta, transferencia y dólares"
              loading="lazy" width="900" height="837">
@@ -245,7 +250,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/pagostarjeta.webp"
+           data-alt="Integración con Stripe — checkout seguro con tarjeta">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/pagostarjeta.webp"
              alt="Integración con Stripe — checkout seguro con tarjeta"
              loading="lazy" width="900" height="837">
@@ -256,7 +264,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/catalogo1.webp"
+           data-alt="Tienda en línea con catálogo y carrito de compras">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/catalogo1.webp"
              alt="Tienda en línea con catálogo y carrito de compras"
              loading="lazy" width="900" height="837">
@@ -267,7 +278,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/ticketdigital.webp"
+           data-alt="Ticket digital electrónico con monedero de cashback">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/ticketdigital.webp"
              alt="Ticket digital electrónico con monedero de cashback"
              loading="lazy" width="900" height="837">
@@ -278,7 +292,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item is-portrait">
+      <div class="portfolio-item is-portrait"
+           data-img="/img/portfolio/kiosko1.webp"
+           data-alt="Kiosko app en tablet — personalización de fotos">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/kiosko1.webp"
              alt="Kiosko app en tablet — personalización de fotos"
              loading="lazy" width="380" height="1035">
@@ -289,7 +306,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/analytics1.webp"
+           data-alt="Dashboard de analytics — visitas y métricas en tiempo real">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/analytics1.webp"
              alt="Dashboard de analytics — visitas y métricas en tiempo real"
              loading="lazy" width="900" height="837">
@@ -300,7 +320,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/imagina1.webp"
+           data-alt="Imagina — herramientas con IA para impresión de fotos">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/imagina1.webp"
              alt="Imagina — herramientas con IA para impresión de fotos"
              loading="lazy" width="900" height="837">
@@ -311,7 +334,10 @@
         </div>
       </div>
 
-      <div class="portfolio-item">
+      <div class="portfolio-item"
+           data-img="/img/portfolio/elcocinator1.webp"
+           data-alt="El Cocinator — landing profesional con diseño premium">
+        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
         <img src="/img/portfolio/elcocinator1.webp"
              alt="El Cocinator — landing profesional con diseño premium"
              loading="lazy" width="900" height="837">
@@ -361,33 +387,36 @@
       </div>
 
       <div class="cluster-card">
-        <h3><i class="fas fa-server"></i> Infraestructura propia</h3>
-        <div class="node-list">
-          <div class="node-item">
-            <div>
-              <div class="node-name">kukulkan</div>
-              <div class="node-spec">ARM64 · 16 GiB RAM · NVMe 2 TB</div>
-            </div>
-            <span class="node-role cp">control-plane</span>
-          </div>
-          <div class="node-item">
-            <div>
-              <div class="node-name">ixchel</div>
-              <div class="node-spec">ARM64 · 8 GiB RAM · SSD 2 TB</div>
-            </div>
-            <span class="node-role wk">worker</span>
-          </div>
-          <div class="node-item">
-            <div>
-              <div class="node-name">chaac</div>
-              <div class="node-spec">ARM64 · 8 GiB RAM · SSD 2 TB</div>
-            </div>
-            <span class="node-role wk">worker</span>
-          </div>
-        </div>
-        <p style="margin-top:1.25rem; font-size:.78rem; color:var(--slate-400); line-height:1.55;">
-          <i class="fas fa-shield-halved" style="color:var(--orange); margin-right:.4rem;"></i>
-          Backups diarios · SSL automático · GitOps con ArgoCD · Monitoreo Prometheus + Grafana
+        <h3><i class="fas fa-cloud"></i> Nube privada · Alta disponibilidad</h3>
+        <ul class="infra-list">
+          <li>
+            <i class="fas fa-circle-nodes"></i>
+            <span>Clúster de <strong>3 nodos independientes</strong> — sin punto único de falla</span>
+          </li>
+          <li>
+            <i class="fas fa-lock"></i>
+            <span>HTTPS / SSL automático en todos los dominios</span>
+          </li>
+          <li>
+            <i class="fas fa-clock-rotate-left"></i>
+            <span>Backups diarios cifrados a <strong>Cloudflare R2</strong></span>
+          </li>
+          <li>
+            <i class="fas fa-chart-line"></i>
+            <span>Monitoreo 24/7 — <strong>Prometheus + Grafana</strong></span>
+          </li>
+          <li>
+            <i class="fas fa-rocket"></i>
+            <span>Despliegue automático sin tiempo de inactividad — <strong>GitOps · ArgoCD</strong></span>
+          </li>
+          <li>
+            <i class="fas fa-hard-drive"></i>
+            <span>Almacenamiento distribuido con <strong>3 réplicas</strong></span>
+          </li>
+        </ul>
+        <p class="infra-note">
+          <i class="fas fa-shield-halved"></i>
+          Tu sistema y tus datos, bajo control total — sin depender de terceros.
         </p>
       </div>
 
@@ -483,6 +512,43 @@
    class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ver captura completa">
+  <button class="lightbox-close" id="lb-close" aria-label="Cerrar">&#x2715;</button>
+  <img id="lb-img" class="lightbox-img" src="" alt="">
+</div>
+
+<script>
+(function () {
+  var lb    = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbClose = document.getElementById('lb-close');
+
+  function open(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+    lbImg.src = '';
+  }
+
+  document.querySelectorAll('.portfolio-item[data-img]').forEach(function (card) {
+    card.addEventListener('click', function () {
+      open(card.dataset.img, card.dataset.alt);
+    });
+  });
+
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
 
 </body>
 </html>
