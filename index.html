@@ -12,7 +12,8 @@
 
   <link rel="canonical" href="https://hosting.xplaya.com">
   <link rel="icon" href="/favicon/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/favicon/site.webmanifest">
 
@@ -86,17 +87,16 @@
 <nav id="navbar">
   <div class="nav-container">
     <a class="nav-brand" href="/">
-      <img src="/favicon/web-app-manifest-192x192.png" alt="xplaya.com" width="32" height="32">
+      <img src="/img/icon.png" alt="Hosting xplaya.com" width="36" height="36">
       <span>xplaya.com</span>
     </a>
     <div class="nav-links">
       <a href="#servicios">Servicios</a>
       <a href="#portafolio">Portafolio</a>
       <a href="#diferenciador">Nosotros</a>
-      <a href="#contacto"
+      <a href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios"
          class="btn btn-wa"
-         target="_blank" rel="noopener"
-         href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios">
+         target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
     </div>
@@ -214,142 +214,267 @@
 <!-- ══════════════════════════════════════════════
      PORTAFOLIO
 ══════════════════════════════════════════════ -->
-<section id="portafolio" class="section section-dark">
-  <div class="container">
-    <div class="section-header section-header--light">
+<section id="portafolio">
+
+  <div class="showcase-header">
+    <div class="container">
       <h2>Lo que ya está funcionando</h2>
       <p>No promesas — sistemas reales en producción hoy</p>
     </div>
-    <div class="portfolio-grid">
+  </div>
 
-      <div class="portfolio-item"
-           data-img="/img/portfolio/pos1.webp"
-           data-alt="Sistema punto de venta — búsqueda de productos">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/pos1.webp"
-             alt="Sistema punto de venta — búsqueda de productos"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">POS</span>
-          <h4>Punto de Venta</h4>
-          <p>Búsqueda instantánea en miles de productos, múltiples cajeros, recibo electrónico y control de inventario en tiempo real.</p>
-        </div>
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/pos1.webp" alt="POS — búsqueda instantánea de productos" loading="lazy" width="1200" height="582">
       </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/multiplestiposdepago.webp"
-           data-alt="Pagos combinados: efectivo, tarjeta, transferencia y dólares">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/multiplestiposdepago.webp"
-             alt="Pagos combinados: efectivo, tarjeta, transferencia y dólares"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Pagos</span>
-          <h4>Múltiples Formas de Pago</h4>
-          <p>Cobra con efectivo, tarjeta, transferencia y dólares en una misma venta. El sistema calcula el cambio y cierra la caja automáticamente.</p>
-        </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Punto de Venta</span>
+        <div class="showcase-icon"><i class="fas fa-magnifying-glass"></i></div>
+        <h3 class="showcase-h">Búsqueda instantánea de productos</h3>
+        <p class="showcase-p">Escribe las primeras letras y el sistema localiza el artículo entre miles en tiempo real. Sin códigos de barras obligatorios — el cajero vende más rápido.</p>
       </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/pagostarjeta.webp"
-           data-alt="Integración con Stripe — checkout seguro con tarjeta">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/pagostarjeta.webp"
-             alt="Integración con Stripe — checkout seguro con tarjeta"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Stripe</span>
-          <h4>Pagos en Línea con Tarjeta</h4>
-          <p>Integración con Stripe para cobros seguros desde cualquier página web. Acepta Visa, Mastercard, Amex y más sin hardware adicional.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/catalogo1.webp"
-           data-alt="Tienda en línea con catálogo y carrito de compras">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/catalogo1.webp"
-             alt="Tienda en línea con catálogo y carrito de compras"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">E-commerce</span>
-          <h4>Tienda en Línea</h4>
-          <p>Catálogo con búsqueda en tiempo real, carrito de compras y envíos a toda la república. Tus clientes compran desde el celular.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/ticketdigital.webp"
-           data-alt="Ticket digital electrónico con monedero de cashback">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/ticketdigital.webp"
-             alt="Ticket digital electrónico con monedero de cashback"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Fidelidad</span>
-          <h4>Ticket Digital y Monedero</h4>
-          <p>Recibo electrónico con link permanente, desglose de compra y monedero de cashback. Tus clientes acumulan y regresan.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item is-portrait"
-           data-img="/img/portfolio/kiosko1.webp"
-           data-alt="Kiosko app en tablet — personalización de fotos">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/kiosko1.webp"
-             alt="Kiosko app en tablet — personalización de fotos"
-             loading="lazy" width="380" height="1035">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Kiosko</span>
-          <h4>App Táctil en Tablet</h4>
-          <p>Kiosko de autoservicio: el cliente personaliza su pedido desde la pantalla sin depender del personal. Disponible en tablet y celular.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/analytics1.webp"
-           data-alt="Dashboard de analytics — visitas y métricas en tiempo real">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/analytics1.webp"
-             alt="Dashboard de analytics — visitas y métricas en tiempo real"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Analytics</span>
-          <h4>Métricas en Tiempo Real</h4>
-          <p>Dashboard con visitantes, sesiones, páginas más vistas y tasa de conversión. Saber qué funciona y qué no, sin adivinar.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/imagina1.webp"
-           data-alt="Imagina — herramientas con IA para impresión de fotos">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/imagina1.webp"
-             alt="Imagina — herramientas con IA para impresión de fotos"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">IA</span>
-          <h4>Herramientas con IA</h4>
-          <p>Generación y edición asistida integrada directamente en el flujo del negocio. De la idea al producto terminado en minutos.</p>
-        </div>
-      </div>
-
-      <div class="portfolio-item"
-           data-img="/img/portfolio/elcocinator1.webp"
-           data-alt="El Cocinator — landing profesional con diseño premium">
-        <div class="portfolio-zoom-hint"><i class="fas fa-expand-alt"></i></div>
-        <img src="/img/portfolio/elcocinator1.webp"
-             alt="El Cocinator — landing profesional con diseño premium"
-             loading="lazy" width="900" height="837">
-        <div class="portfolio-caption">
-          <span class="portfolio-tag">Página web</span>
-          <h4>Página Web Profesional</h4>
-          <p>Sitio con diseño premium, SEO optimizado, carga instantánea y pago en línea integrado. Ejemplo real: <strong>elcocinator.com</strong></p>
-        </div>
-      </div>
-
     </div>
   </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/pos2.webp" alt="POS — selección de impresora en red" loading="lazy" width="1200" height="587">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Punto de Venta</span>
+        <div class="showcase-icon"><i class="fas fa-print"></i></div>
+        <h3 class="showcase-h">Impresoras en red integradas</h3>
+        <p class="showcase-p">Selecciona la impresora y envía tickets en un clic: Kyocera, Ricoh, HP, Samsung. Cero configuración para el cajero.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/pos3.webp" alt="Dashboard de estadísticas — ROI y ventas 2026" loading="lazy" width="1200" height="586">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Estadísticas</span>
+        <div class="showcase-icon"><i class="fas fa-chart-line"></i></div>
+        <h3 class="showcase-h">Retorno de inversión en tiempo real</h3>
+        <p class="showcase-p">Gráficas de ventas, inversión, ganancia y conteo por mes y por día. Sabe exactamente cuánto ganas y cuánto inviertes — sin hoja de cálculo.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/multiplestiposdepago.webp" alt="Pago combinado — efectivo, tarjeta, transferencia y dólares" loading="lazy" width="1200" height="585">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Pagos</span>
+        <div class="showcase-icon"><i class="fas fa-wallet"></i></div>
+        <h3 class="showcase-h">Pago combinado en una sola venta</h3>
+        <p class="showcase-p">Efectivo + tarjeta + transferencia + dólares en la misma transacción. El sistema calcula el cambio y cierra la caja automáticamente.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/pagostarjeta.webp" alt="Integración Stripe — checkout seguro con tarjeta" loading="lazy" width="1200" height="765">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Stripe</span>
+        <div class="showcase-icon"><i class="fas fa-credit-card"></i></div>
+        <h3 class="showcase-h">Pagos con tarjeta en línea</h3>
+        <p class="showcase-p">Acepta Visa, Mastercard y Amex directamente en tu sitio. Checkout seguro integrable en cualquier página web, sin hardware adicional.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/pagostarjeta1.webp" alt="Planes de créditos y suscripciones via Stripe" loading="lazy" width="1200" height="584">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Billing</span>
+        <div class="showcase-icon"><i class="fas fa-coins"></i></div>
+        <h3 class="showcase-h">Suscripciones y créditos</h3>
+        <p class="showcase-p">Planes en USD y MXN con cobro automático vía Stripe. Tus clientes eligen su plan y pagan sin salir de tu sistema.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/catalogo1.webp" alt="Tienda en línea — catálogo con búsqueda y envíos" loading="lazy" width="1200" height="583">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">E-commerce</span>
+        <div class="showcase-icon"><i class="fas fa-store"></i></div>
+        <h3 class="showcase-h">Tienda en línea con catálogo</h3>
+        <p class="showcase-p">Catálogo con búsqueda en tiempo real. Envíos a toda la república por paquetería. Tus clientes navegan y compran desde el celular.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/carrito1.webp" alt="Catálogo responsivo — productos con precio y foto" loading="lazy" width="1200" height="584">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">E-commerce</span>
+        <div class="showcase-icon"><i class="fas fa-tag"></i></div>
+        <h3 class="showcase-h">Catálogo responsivo</h3>
+        <p class="showcase-p">Diseño limpio: categorías, precios, fotos de producto y buscador. Funciona en móvil, tablet y escritorio sin ningún ajuste adicional.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/carrito2.webp" alt="Carrito de compras — confirmación de pedido" loading="lazy" width="1200" height="582">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Carrito</span>
+        <div class="showcase-icon"><i class="fas fa-cart-shopping"></i></div>
+        <h3 class="showcase-h">Proceso de compra simplificado</h3>
+        <p class="showcase-p">El cliente revisa su pedido, captura nombre y teléfono, y confirma. El sistema registra la venta y tú recibes el aviso en segundos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/ticketdigital.webp" alt="Ticket digital electrónico con monedero de cashback" loading="lazy" width="1200" height="583">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Ticket Digital</span>
+        <div class="showcase-icon"><i class="fas fa-receipt"></i></div>
+        <h3 class="showcase-h">Recibo electrónico con cashback</h3>
+        <p class="showcase-p">Ticket permanente con link único, desglose completo de la compra y opción de monedero de cashback integrada. El cliente lo guarda para siempre.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/fidelidad1.webp" alt="Portal del monedero electrónico — consulta de saldo" loading="lazy" width="1200" height="587">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Fidelidad</span>
+        <div class="showcase-icon"><i class="fas fa-piggy-bank"></i></div>
+        <h3 class="showcase-h">Portal del monedero electrónico</h3>
+        <p class="showcase-p">Tus clientes consultan su saldo con su número de teléfono. Sin app que instalar, sin contraseña que recordar — solo regresan a comprar más.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/fidelidad2.webp" alt="Historial de cashback y compras acumuladas" loading="lazy" width="1200" height="587">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Fidelidad</span>
+        <div class="showcase-icon"><i class="fas fa-clock-rotate-left"></i></div>
+        <h3 class="showcase-h">Historial de compras y cashback</h3>
+        <p class="showcase-p">Cada compra genera cashback visible al cliente con fecha de vencimiento. El historial completo, disponible en cualquier momento desde el celular.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap is-portrait">
+        <img src="/img/portfolio/kiosko1.webp" alt="Kiosko táctil — personalización de fotos en tablet" loading="lazy" width="420" height="931">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Kiosko</span>
+        <div class="showcase-icon"><i class="fas fa-tablet-screen-button"></i></div>
+        <h3 class="showcase-h">Kiosko táctil de autoservicio</h3>
+        <p class="showcase-p">El cliente personaliza su pedido desde la pantalla: elige foto, fuente, color y emojis. Sin depender del personal — más ventas, menos errores.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap is-portrait">
+        <img src="/img/portfolio/mobil1.webp" alt="App móvil — selección de formato polaroid de impresión" loading="lazy" width="408" height="924">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Móvil</span>
+        <div class="showcase-icon"><i class="fas fa-mobile-screen"></i></div>
+        <h3 class="showcase-h">Impresión a la medida desde el celular</h3>
+        <p class="showcase-p">El cliente elige el formato Polaroid — Strip, Large, Classic o Mini — con precio y cantidad visibles. Un toque para continuar al pago.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/analytics1.webp" alt="Analytics — dashboard de tráfico en tiempo real" loading="lazy" width="1200" height="585">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Analytics</span>
+        <div class="showcase-icon"><i class="fas fa-chart-bar"></i></div>
+        <h3 class="showcase-h">Tráfico en tiempo real</h3>
+        <p class="showcase-p">Visitantes, visitas, páginas vistas, tasa de rebote y duración de sesión. Sin cookies, sin GDPR complicado — datos limpios desde el día uno.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/analitics2.webp" alt="Analytics — métricas por proyecto separado" loading="lazy" width="1200" height="572">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Analytics</span>
+        <div class="showcase-icon"><i class="fas fa-gauge-high"></i></div>
+        <h3 class="showcase-h">Métricas por proyecto</h3>
+        <p class="showcase-p">Monitorea cada sitio por separado desde un solo panel. Identifica qué páginas retienen a los usuarios y cuáles los convierten en clientes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-dark">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/imagina1.webp" alt="Imagina — herramientas de impresión con IA" loading="lazy" width="1200" height="581">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">IA · Herramientas</span>
+        <div class="showcase-icon"><i class="fas fa-robot"></i></div>
+        <h3 class="showcase-h">Diseño asistido para impresión</h3>
+        <p class="showcase-p">Herramientas de impresión fotográfica en el navegador: multipágina, polaroid, fotos carnet y más. El cliente diseña, tú imprimes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase-row showcase-light showcase-reverse">
+    <div class="showcase-inner">
+      <div class="showcase-img-wrap">
+        <img src="/img/portfolio/elcocinator1.webp" alt="El Cocinator — landing profesional con diseño premium" loading="lazy" width="1200" height="585">
+      </div>
+      <div class="showcase-content">
+        <span class="showcase-tag">Sitio Web</span>
+        <div class="showcase-icon"><i class="fas fa-globe"></i></div>
+        <h3 class="showcase-h">Diseño web con conversión integrada</h3>
+        <p class="showcase-p">Sitios que venden: hero visual, precios claros, WhatsApp directo y Stripe integrado. Ejemplo real en producción: <strong>elcocinator.com</strong></p>
+      </div>
+    </div>
+  </div>
+
 </section>
 
 
@@ -361,15 +486,15 @@
     <div class="diff-layout">
 
       <div class="diff-content">
-        <h2>¿Por qué conmigo?</h2>
+        <h2>¿Por qué con nosotros?</h2>
         <p>
-          No es teoría — opero mi <strong>propio clúster Kubernetes (k3s)</strong> ARM64 en producción.
-          Los sistemas que construyo viven en esa infraestructura hoy mismo, con monitoreo 24/7,
-          backups automáticos y alta disponibilidad.
+          Trabajamos con <strong>Kubernetes</strong>, la tecnología de orquestación de contenedores
+          desarrollada por Google y usada por las empresas más grandes del mundo.
+          La misma infraestructura de escala global, adaptada al tamaño y presupuesto de tu negocio.
         </p>
         <p>
-          Entiendo el negocio pequeño porque trabajo con uno a diario. Sé qué funciona,
-          qué es desperdicio y cuánto cuesta cada decisión técnica.
+          Entendemos el negocio pequeño porque trabajamos con ellos a diario.
+          Sabemos qué funciona, qué es desperdicio y cuánto cuesta cada decisión técnica.
         </p>
 
         <h3 style="font-size:.9rem; font-weight:700; color:var(--slate-500); text-transform:uppercase; letter-spacing:.08em; margin-bottom:.75rem;">Stack tecnológico</h3>
@@ -439,25 +564,25 @@
       <div class="process-step">
         <div class="step-num">1</div>
         <h4>Platicamos</h4>
-        <p>Me cuentas cómo funciona tu negocio y qué quieres mejorar. Sin compromiso, sin tecnicismos. Solo entender qué necesitas.</p>
+        <p>Nos cuentas cómo funciona tu negocio y qué quieres mejorar. Sin compromiso, sin tecnicismos. Solo entender qué necesitas.</p>
       </div>
 
       <div class="process-step">
         <div class="step-num">2</div>
         <h4>Propuesta</h4>
-        <p>Te presento opciones con costos y tiempos reales. Defines el alcance, priorizamos lo que da más valor primero.</p>
+        <p>Te presentamos opciones con costos y tiempos reales. Defines el alcance, priorizamos lo que da más valor primero.</p>
       </div>
 
       <div class="process-step">
         <div class="step-num">3</div>
         <h4>Desarrollamos</h4>
-        <p>Construyo el sistema, te muestro avances en cada etapa y hago los ajustes que necesites antes de lanzar.</p>
+        <p>Construimos el sistema, te mostramos avances en cada etapa y hacemos los ajustes que necesites antes de lanzar.</p>
       </div>
 
       <div class="process-step">
         <div class="step-num">4</div>
-        <h4>Lanzamos y te acompaño</h4>
-        <p>Desplegamos el sistema y quedo disponible para soporte. Tus datos son tuyos — siempre.</p>
+        <h4>Lanzamos y te acompañamos</h4>
+        <p>Desplegamos el sistema y quedamos disponibles para soporte. Tus datos son tuyos — siempre.</p>
       </div>
 
     </div>
@@ -471,7 +596,7 @@
 <section id="contacto" class="section">
   <div class="container">
     <h2>¿Tu negocio listo para crecer?</h2>
-    <p>Escríbeme por WhatsApp o por correo — te respondo el mismo día.</p>
+    <p>Escríbenos por WhatsApp o por correo — te respondemos el mismo día.</p>
     <div class="cta-actions">
       <a href="https://wa.me/524522018336?text=Hola%2C%20quisiera%20información%20sobre%20sus%20servicios%20de%20desarrollo%20y%20hosting"
          class="btn btn-wa" target="_blank" rel="noopener">
@@ -512,43 +637,6 @@
    class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
-
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ver captura completa">
-  <button class="lightbox-close" id="lb-close" aria-label="Cerrar">&#x2715;</button>
-  <img id="lb-img" class="lightbox-img" src="" alt="">
-</div>
-
-<script>
-(function () {
-  var lb    = document.getElementById('lightbox');
-  var lbImg = document.getElementById('lb-img');
-  var lbClose = document.getElementById('lb-close');
-
-  function open(src, alt) {
-    lbImg.src = src;
-    lbImg.alt = alt || '';
-    lb.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function close() {
-    lb.classList.remove('is-open');
-    document.body.style.overflow = '';
-    lbImg.src = '';
-  }
-
-  document.querySelectorAll('.portfolio-item[data-img]').forEach(function (card) {
-    card.addEventListener('click', function () {
-      open(card.dataset.img, card.dataset.alt);
-    });
-  });
-
-  lbClose.addEventListener('click', close);
-  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-})();
-</script>
 
 </body>
 </html>
