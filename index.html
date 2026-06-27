@@ -570,32 +570,35 @@
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ver captura completa">
   <button class="lightbox-close" id="lb-close" aria-label="Cerrar">&#x2715;</button>
-  <img id="lb-img" class="lightbox-img" src="" alt="">
+  <img id="lb-img" class="lightbox-img" alt="">
 </div>
 
 <script>
 (function () {
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lb-img');
-  document.getElementById('lb-close').addEventListener('click', close);
-  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-  document.querySelectorAll('.portfolio-item[data-img]').forEach(function (card) {
-    card.addEventListener('click', function () {
-      var sbw = window.innerWidth - document.documentElement.clientWidth;
-      document.body.style.paddingRight = sbw + 'px';
-      document.body.style.overflow = 'hidden';
-      lbImg.src = card.dataset.img;
-      lbImg.alt = card.dataset.alt || '';
-      lb.classList.add('is-open');
-    });
-  });
-  function close() {
+
+  function closeLightbox() {
     lb.classList.remove('is-open');
     document.body.style.overflow = '';
     document.body.style.paddingRight = '';
-    lbImg.src = '';
+    lbImg.removeAttribute('src');
   }
+
+  document.getElementById('lb-close').addEventListener('click', closeLightbox);
+  lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLightbox(); });
+
+  document.querySelectorAll('.portfolio-item[data-img]').forEach(function (card) {
+    card.addEventListener('click', function () {
+      lbImg.setAttribute('src', card.dataset.img);
+      lbImg.alt = card.dataset.alt || '';
+      var sbw = window.innerWidth - document.documentElement.clientWidth;
+      document.body.style.paddingRight = sbw + 'px';
+      document.body.style.overflow = 'hidden';
+      lb.classList.add('is-open');
+    });
+  });
 })();
 </script>
 

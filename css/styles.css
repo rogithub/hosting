@@ -614,11 +614,11 @@ footer {
 }
 .lightbox.is-open { display: flex; }
 .lightbox-img {
-  max-width: min(96vw, 1000px);
-  max-height: 92vh;
+  display: block;
+  max-width: 96vw;
+  max-height: 90vh;
   width: auto;
   height: auto;
-  object-fit: contain;
   border-radius: var(--radius);
   box-shadow: 0 24px 80px rgba(0,0,0,.9);
   cursor: default;
